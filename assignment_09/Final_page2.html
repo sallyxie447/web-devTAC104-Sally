@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Baking, Cooking, Recipes, Web Development">
+    <meta name="description"
+        content="Find simple, reliable, and tasty baked goods inspired by the warmth and creativity of Sally’s Bakery.">
+    <title>Sally's Bakery | Recipes</title>
+    <link rel="stylesheet" href="navbar.css">
+    <style>
+        #text1 {
+            width: 600px;
+            height: auto;
+            margin-bottom: -10px;
+            margin-left: 40px;
+        }
+
+        img {
+            object-fit: cover;
+        }
+
+        #img1 {
+            width: 90%;
+            height: auto;
+            border-radius: 10px;
+            margin-left: 60px;
+            margin-right: 60px;
+            margin-top: 40px;
+            border: 3px solid rgb(111, 61, 0);
+        }
+
+        .img2 {
+            width: 490px;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        #paragraphs {
+            text-align: center;
+            margin: 0 auto;
+            width: 500px;
+            line-height: 1.7;
+        }
+
+        #pt2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .category {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 490px;
+            margin: 10px;
+        }
+
+        #pt2 p {
+            text-align: center;
+        }
+
+        .clickbox {
+            position: relative;
+            display: block;
+            width: 490px;
+            height: 300px;
+            border: 3px solid rgb(111, 61, 0);
+            border-radius: 10px;
+            overflow: hidden;
+            object-fit: cover;
+
+        }
+
+        .overlay {
+            position: absolute;
+            /* transform: scale(1.5); */
+            /* transform: translateY(-306px); */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(92, 54, 43, 0.6);
+
+
+
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5s ease 0s;
+
+            text-decoration: none;
+            color: #F7B7A3;
+            font-weight: bold;
+        }
+
+        .overlay:hover {
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="navbar">
+        <div id="logo">
+            <p>Sally's Bakery</p>
+        </div>
+        <ul id="menu">
+            <li><a href="Final_Homepage.html">Home</a></li>
+            <li><a href="Final_page2.html">Recipes</a></li>
+            <li><a href="">Tips</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+
+    </div>
+    <h1>
+        Recipes
+    </h1>
+    <div id="layout">
+
+        <p id="text1">
+            Start with these simple and foolproof recipes — eachone
+            perfect for new bakers looking for quick success
+        </p>
+
+        <img src="img/istockphoto-1405383671-612x612.jpg" alt="baking image" id="img1">
+
+        <div id="paragraphs">
+            <p>
+                Welcome to the heart of Bake & Bloom — the recipes! Here, you’ll find simple, foolproof treats that
+                anyone
+                can make, even if it’s your very first time turning on the oven. Each recipe is designed to teach basic
+                baking skills while giving you delicious results that you’ll be proud to share. Whether you’re craving
+                something chewy, creamy, or fluffy, these recipes will help you build confidence one bake at a time.
+            </p>
+            <p>
+                Every recipe on this page includes clear instructions, everyday ingredients, and helpful tips to make
+                the
+                process stress-free. You won’t need fancy tools or complicated steps — just a bowl, a whisk, and a
+                little
+                curiosity. From classic chocolate chip cookies to rich, creamy cheesecake, these beginner-friendly bakes
+                are
+                made to guarantee sweet success.
+            </p>
+            <p>
+                As you explore, don’t be afraid to get creative! Try adding your favorite toppings, experimenting with
+                flavors, or sharing your own twist on a recipe. Baking isn’t just about following directions — it’s
+                about
+                having fun and learning along the way. So preheat your oven, grab your mixing spoon, and let’s bake
+                something wonderful together.
+            </p>
+        </div>
+
+        <div id="pt2">
+            <div class="category">
+                <a href="Final_recipe1.html" class="clickbox">
+                    <img src="img/20144-banana-banana-bread-VAT-009-4x3-B-78f1cfc64bfa451e8a0fead814719b9f.jpg" alt="bread"
+                        class="img2">
+                    <div class="overlay">Bananna Bread</div>
+                </a>
+
+                <p>Moist, soft, and naturally sweet — the perfect way to use ripe bananas.</p>
+            </div>
+
+            <div class="category">
+                <a href="" class="clickbox">
+                    <img src="img/The-Best-Chocolate-Chip-Cookies-2.jpg"
+                        alt="cookies" class="img2">
+                    <div class="overlay">Chocolate Chip Cookies</div>
+                </a>
+                <p>Crispy on the edges, chewy in the center, and packed with melty chocolate.</p>
+            </div>
+
+            <div class="category">
+                <a href="" class="clickbox">
+                    <img src="img/cheesecake-1-22.jpg" alt="cake" class="img2">
+                    <div class="overlay">
+                        Cheesecake
+                    </div>
+                </a>
+                <p>Rich, creamy, and smooth with a buttery crust that melts in your mouth.</p>
+            </div>
+            <div class="category">
+                <a href="" class="clickbox">
+                    <img src="img/157877-vanilla-cupcakes-ddmfs-4X3-0397-59653731be1d4769969698e427d7f5bc.jpg" alt="cake" class="img2">
+                    <div class="overlay">
+                        Vanilla Cupcakes
+                    </div>
+                </a>
+                <p>Light, fluffy, and perfectly sweet — a classic treat for any occasion.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="footer">
+        <p>
+            By: Sally Xie | TAC104 @ USC edu
+        </p>
+    </div>
+
+</body>
+
+</html>

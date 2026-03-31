@@ -1,0 +1,89 @@
+@font-face {
+    font-family: "maples";
+    src: url("fonts/Super\ Maples.ttf");
+}
+
+body {
+    background-color: #FFF8F0;
+    margin: 0px;
+}
+
+p {
+    color: rgb(111, 61, 0);
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: bisque;
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+}
+
+#navbar ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+#navbar a {
+    color: rgb(111, 61, 0);
+    /* transition: all 0.5s ease 0s; */
+}
+
+#navbar li {
+    position: relative;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    /* transition: all 1s ease 0s; */
+}
+
+#navbar li:hover {
+    background-color: rgb(154, 112, 61);
+}
+
+#navbar li:hover a {
+    color: #F7B7A3;
+}
+
+#menu a {
+    text-decoration: none;
+    display: block;
+    width: 140px;
+    text-align: center;
+}
+
+#logo p {
+    margin-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: "maples", fantasy;
+    color: #F7B7A3;
+    font-size: 1.5em;
+    text-shadow: 2px 2px rgb(64, 35, 0);
+}
+
+h1 {
+    font-family: "maples", fantasy;
+    font-weight: normal;
+    font-size: 3.5em;
+    margin: 0px;
+    margin-left: 20px;
+    margin-top: 30px;
+    color: rgb(111, 61, 0);
+}
+
+#footer p {
+    background-color: rgb(111, 61, 0);
+    color: beige;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#footer {
+    margin-top: 30px;
+}
