@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS effects</title>
+    <style>
+        h1{
+            text-align: center;
+            
+        }
+        img{
+            width: 220px;
+            height: 300px;
+            object-fit: cover;
+            margin: 0px;
+        }
+        #images{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 10px;
+            position: relative;
+        }
+        #img1{
+            transform: translateX(220px);
+            transition: all 1s;
+        }
+        #img3{
+            transform: translateX(-220px);
+            transition: all 1s;
+        }
+        #img2{
+            transition: all 1s;
+        }
+        #images:hover #img3{
+			transform: rotate(10deg) translateX(-50px) translateY(50px);
+		}
+        #images:hover #img2{
+            transform: rotate(5deg) translateX(-10px) translateY(10px);
+        }
+        #images:hover #img1{
+            transform: rotate(-10deg) translateX(40px) translateY(40px);
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>
+        Recent Drinks
+    </h1>
+    <div id="images">
+        <img src="img/WechatIMG10004.jpg" alt="drink1" id="img1">
+        <img src="img/WechatIMG1204.jpg" alt="drink2" id="img2">
+        <img src="img/WechatIMG12652.jpg" alt="drink3" id="img3">
+    </div>
+</body>
+</html>

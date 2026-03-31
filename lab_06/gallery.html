@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Gallery</title>
+
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        #gallery {
+            display: flex;
+            align-items: flex-start;
+            flex-wrap: wrap;
+
+            width: 530px;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+        .thumbnail{
+            width: 150px;
+            height:auto;
+            margin: 5px;
+            border: 5px solid lightblue;
+            
+        }
+
+        .thumbnail:hover{
+            opacity: 0.3;
+        }
+
+        .pics p{
+            text-align: center;
+            visibility: visible;
+        }
+
+        .pics:hover p{
+            visibility:hidden;
+            /* display: block; */
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <h1>
+        Bracelet Gallery
+    </h1>
+    <div id="gallery">
+        <div class="pics">
+            <img class="thumbnail" src="puppy1.png" alt="puppy1">
+            <p>Puppy</p>
+        </div>
+        <div class="pics">
+            <img class="thumbnail" src="greybracelet.png" alt="greybracelet">
+            <p>Grey Bracelet</p>
+        </div>
+        <div class="pics">
+            <img class="thumbnail" src="pipecleanerpuppies.PNG" alt="poster">
+            <p>Poster for Sale</p>
+        </div>
+        <div class="pics">
+            <img class="thumbnail" src="IMG_1874.JPG" alt="sale">
+            <p>Pictures from Sale</p>
+        </div>
+        <div class="pics">
+            <img class="thumbnail" src="pinkbracelet.png" alt="pinkbracelet">
+            <p>Pink Bracelet</p>
+        </div>
+    </div>
+</body>
+
+</html>

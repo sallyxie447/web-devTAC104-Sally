@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bracelet Purchase Form</title>
+
+    <style>
+        #header{
+            text-align: center;
+        }
+        #main {
+            width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: aliceblue;
+            border: 5px solid lightblue;
+        }
+
+        .form-row {
+            padding: 6px;
+            display: flex;
+            /* element becomes flex container, allowing for spacing */
+        }
+
+        .form-col {
+            width: 300px;
+        }
+
+        button{
+            padding: 5px 10px;
+            margin: 5px;
+        }
+        #submitbtn{
+            margin-left: 300px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="header">
+        <h1>
+            Bracelet Purchase Request Form
+        </h1>
+    </div>
+
+    <div id="main">
+        <form action="confirmation.html">
+
+
+            <div class="form-row">
+                <div class="form-col">
+                    <label for="name-id">Name:</label>
+                </div>
+                <input type="text" id="name-id" placeholder="Sally Xie">
+            </div>
+
+            <div class="form-row">
+                <div class="form-col">
+                    <label for="phone-id">Phone Number:</label>
+                </div>
+
+                <input type="number" id="phone-id">
+            </div>
+
+            <div class="form-row">
+                <div class="form-col">
+                    What type of Bracelet?
+                </div>
+
+                <label>
+                    <input type="radio" name="Bracelet">
+                    Beaded
+                </label>
+
+                <label>
+                    <input type="radio" name="Bracelet">
+                    Metal
+                </label>
+
+                <label>
+                    <input type="radio" name="Bracelet">
+                    Leather
+                </label>
+
+                <label>
+                    <input type="radio" name="Bracelet">
+                    Adjustable
+                </label>
+
+            </div>
+
+            <div class="form-row">
+                <div class="form-col">
+                    Add-ons:
+                </div>
+
+                <label>
+                    <input type="checkbox">
+                    Engraving
+                </label>
+                <label>
+                    <input type="checkbox">
+                    Charm attachment
+                </label>
+                <label>
+                    <input type="checkbox">
+                    Gift wrapping
+                </label>
+                <label>
+                    <input type="checkbox">
+                    Bulk packaging
+                </label>
+            </div>
+
+            <div class="form-row">
+                <div class="form-col">
+                    Size
+                </div>
+
+                <select>
+                    <option>Small</option>
+                    <option>Medium</option>
+                    <option>Large</option>
+                </select>
+
+            </div>
+
+            <div class="form-row">
+                <div class="form-col">
+                    <label for="msg">Special Requests/Customization</label>
+                </div>
+                <textarea type="msg" placeholder="I would like a purple and pink theamed bracelet."></textarea>
+
+
+            </div>
+
+            <div class="form-row">
+                <div class="form-col">
+                </div>
+                <label>
+                    <input type="checkbox">
+                    I accept terms & conditions.
+                </label>
+            </div>
+
+            <div class="form-row">
+
+                <button id="submitbtn" type="submit">Send</button>
+                <button type="reset">Reset</button>
+
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>

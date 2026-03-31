@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanrio Puzzle</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="drag/draggabilly.pkgd.min.js"></script>
+
+    <style>
+        img {
+            width: 200px;
+            height: auto;
+        }
+
+        .flexbox {
+            width: 700px;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+        }
+        .draggable{
+            box-shadow: 5px 5px 10px;
+        }
+
+        #move1 {
+            position: relative;
+            top: -15px;
+            left: -20px;
+            box-shadow: 5px 5px 10px;
+        }
+
+        #move2 {
+            position: relative;
+            top: -30px;
+            left: 20px;
+            box-shadow: 5px 5px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        Sanrio Puzzle
+    </h1>
+
+    <div class="flexbox">
+        <img src="img/row-1-column-1.jpg" alt="img1" id="move1" class="draggable">
+        <img src="img/row-1-column-2.jpg" alt="img2" class="draggable">
+        <img src="img/row-1-column-3.jpg" alt="img3" id="move2" class="draggable">
+        <img src="img/row-2-column-1.jpg" alt="img4" class="draggable">
+        <img src="img/row-2-column-2.jpg" alt="img5" class="draggable">
+        <img src="img/row-2-column-3.jpg" alt="img6" class="draggable">
+    </div>
+    <script>
+        $('.draggable').draggabilly();
+    </script>
+    
+</body>
+
+</html>
