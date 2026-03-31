@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Baking, Cooking, Recipes, Web Development, form, feedback, submit">
+    <meta name="description"
+        content="This form is for anyone who wants to reach out with questions, feedback, or requests related to Sally’s Bakery. Whether you need baking help, website support, or have a suggestion, this is the best way to contact us.">
+    <title>Sally's Bakery | Banana Bread</title>
+    <link rel="stylesheet" href="navbar.css">
+    <style>
+
+        form{
+            margin-left: 40px;
+        }
+
+        .row{
+            margin: 20px 0px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="navbar">
+        <div id="logo">
+            <p>Sally's Bakery</p>
+        </div>
+        <ul id="menu">
+            <li><a href="Final_Homepage.html">Home</a></li>
+            <li><a href="Final_page2.html">Recipes</a></li>
+            <li><a href="Final_Tips.html">Tips</a></li>
+            <li><a href="Final_Contact.html">Contact</a></li>
+        </ul>
+
+    </div>
+    <h1>
+        Contact
+    </h1>
+
+    <form action="contact_submission.html">
+
+        <div class="row">
+            <div class="col">
+                <label for="name-id">Name:</label>
+            </div>
+            <input type="text" id="name-id" placeholder="Sally Xie">
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <label for="email-id">Email Address</label>
+            </div>
+
+            <input type="text" id="email-id" placeholder="sallybaking@usc.edu">
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <label for="phone-id">Phone Number</label>
+            </div>
+
+            <input type="number" id="phone-id" placeholder="1234567890">
+        </div>
+
+        <div class="row">
+            <div class="col">
+                Subject/Reason for Contact
+            </div>
+
+            <label>
+                <input type="radio" name="Reason">
+                General Question
+            </label>
+
+            <label>
+                <input type="radio" name="Reason">
+                Feedback
+            </label>
+
+            <label>
+                <input type="radio" name="Reason">
+                Business Inquiry
+            </label>
+
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <label for="msg">Message:</label>
+            </div>
+            <textarea id="msg" placeholder="There is a spelling mistake..."></textarea>
+
+
+        </div>
+
+        <div class="row">
+            <div class="col">
+            </div>
+            <label>
+                <input type="checkbox">
+                I accept terms & conditions.
+            </label>
+        </div>
+
+        <div class="row">
+
+            <button id="submitbtn" type="submit">Send</button>
+            <button type="reset">Reset</button>
+
+        </div>
+
+    </form>
+    <div id="footer">
+        <p>
+            By: Sally Xie | TAC104 @ USC edu
+        </p>
+    </div>
+
+</body>
+
+</html>
