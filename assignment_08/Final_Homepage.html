@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Baking, Cooking, Recipes, Web Development"> 
+	<meta name="description" content="Sally’s Bakery offers homemade breads, pastries, and cakes baked fresh daily. Discover easy recipes, baking tips, and the joy of home baking today.">
+    <title>Sally's Bakery | Homepage</title>
+    <style>
+        @font-face {
+            font-family: "maples";
+            src: url("fonts/Super\ Maples.ttf");
+        }
+
+        body {
+            background-color: #FFF8F0;
+            margin: 0px;
+        }
+
+        p {
+            color: rgb(111, 61, 0);
+        }
+
+        #navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: bisque;
+        }
+
+        #menu {
+            display: flex;
+            list-style: none;
+        }
+
+        #navbar ul {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #navbar a {
+            color: rgb(111, 61, 0);
+            /* transition: all 0.5s ease 0s; */
+        }
+
+        #navbar li {
+            position: relative;
+            padding-top: 35px;
+            padding-bottom: 35px;
+            /* transition: all 1s ease 0s; */
+        }
+
+        #navbar li:hover {
+            background-color: rgb(154, 112, 61);
+        }
+
+        #navbar li:hover a {
+            color: #F7B7A3;
+        }
+
+        #menu a {
+            text-decoration: none;
+            display: block;
+            width: 140px;
+            text-align: center;
+        }
+
+        #logo p {
+            margin-left: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-family: "maples", fantasy;
+            color: #F7B7A3;
+            font-size: 1.5em;
+            text-shadow: 2px 2px rgb(64, 35, 0);
+        }
+
+        h1 {
+            font-family: "maples", fantasy;
+            font-weight: normal;
+            font-size: 3.5em;
+            margin: 0px;
+            margin-left: 20px;
+            margin-top: 30px;
+            color: rgb(111, 61, 0);
+        }
+
+        #layout {
+            max-width: 1000px;
+            margin-left: 40px;
+        }
+
+        h2 {
+            font-family: "maples", fantasy;
+            font-weight: normal;
+            color: rgb(111, 61, 0);
+            text-shadow: 2px 2px #F7B7A3;
+            font-size: 2em;
+        }
+
+        #text1 {
+            width: 600px;
+            height: auto;
+            margin-bottom: 40px;
+        }
+
+        #recipes-btn {
+            padding: 10px 20px;
+            border-radius: 10px;
+            margin: 10px;
+            background-color: bisque;
+            color: rgb(111, 61, 0);
+            text-decoration: none;
+        }
+
+        #recipes-btn:hover {
+            background-color: #F7B7A3;
+        }
+
+        img {
+            object-fit: cover;
+        }
+
+        #img1 {
+            width: 900px;
+            height: 500px;
+            margin-top: 40px;
+            border-radius: 10px;
+            border: 3px solid rgb(111, 61, 0);
+        }
+
+        .img2 {
+            width: 300px;
+            height: 300px;
+            border-radius: 10px;
+            border: 3px solid rgb(111, 61, 0);
+        }
+
+        #pt2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .category {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 300px;
+            margin: 10px;
+        }
+
+        #pt2 p {
+            text-align: center;
+        }
+
+        .overlay {
+            position: absolute;
+            /* transform: scale(1.5); */
+            transform: translateY(3px);
+            width: 300px;
+            height: 300px;
+            background-color: rgba(92, 54, 43, 0.6);
+
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5s ease 0s;
+
+            text-decoration: none;
+            color: #F7B7A3;
+            font-weight: bold;
+        }
+
+        .overlay:hover {
+            opacity: 0;
+        }
+
+        #pt3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #pt3 img {
+            width: 600px;
+            border-radius: 10px;
+            border: 3px solid rgb(111, 61, 0);
+        }
+
+        #selfintro {
+            max-width: 500px;
+            height: auto;
+            margin: 20px;
+        }
+
+        #more {
+            padding: 10px 20px;
+            border-radius: 10px;
+            background-color: bisque;
+            color: rgb(111, 61, 0);
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        #more:hover {
+            background-color: #F7B7A3;
+        }
+
+        #footer p{
+            background-color: rgb(111, 61, 0);
+            color: beige;
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        #footer{
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="navbar">
+        <div id="logo">
+            <p>Sally's Bakery</p>
+        </div>
+        <ul id="menu">
+            <li><a href="Final_Homepage.html">Home</a></li>
+            <li><a href="">Recipes</a></li>
+            <li><a href="">Tips</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+
+    </div>
+    <h1>
+        Home Baking for Beginners
+    </h1>
+    <div id="layout">
+
+        <p id="text1">
+            Sally's Bakery is a warm, welcoming guide designed to help new bakers discover
+            the joy of creating homemade treats. From simple recipes to essential tips,
+            this site makes learning to bake easy, fun, and rewarding.
+        </p>
+
+        <a href="" id="recipes-btn">Start Baking</a>
+
+        <img src="img/photo-1597528662465-55ece5734101.jpeg" alt="baking image" id="img1">
+
+        <h2>
+            Satify Your Sweet Tooth at Home!
+        </h2>
+
+        <div id="pt2">
+            <div class="category">
+                <img src="img/6788-amish-white-bread-DDMFS-4x3-6faa1e552bdb4f6eabdd7791e59b3c84.jpg" alt="bread"
+                    class="img2">
+                <div class="overlay">Bread</div>
+
+                <p>Warm, golden, and satisfying — bake your way to homemade goodness.</p>
+            </div>
+
+            <div class="category">
+                <img src="img/Simply-Recipes-Copycat-Subway-Chocolate-Chip-Cookies--8-a40444af559346edb461ff762eb7dabc.jpg"
+                    alt="cookies" class="img2">
+                <div class="overlay">Cookies</div>
+                <p>Crispy on the edges, chewy in the middle — the classic comfort treat.</p>
+            </div>
+
+            <div class="category">
+                <img src="img/Vanilla-Birthday-Cake-18-1200x1480.webp" alt="cake" class="img2">
+                <div class="overlay">
+                    Cake
+                </div>
+                <p>Light, fluffy, and full of flavor — perfect for every celebration.</p>
+            </div>
+        </div>
+
+        <div id="pt3">
+            <img src="img/IMG_2406.JPG" alt="me">
+            <div id="selfintro">
+                <h2>
+                    Who is Sally?
+                </h2>
+                <p>Hi, I’m Sally Xie, the creator of Bake & Bloom! I started this website to share my love for baking
+                    and to help beginners discover how fun and comforting it can be to make something from scratch. As
+                    someone who learned to bake through trial and error, I know how rewarding it feels when a recipe
+                    finally turns out right — and I hope Bake & Bloom inspires you to keep whisking, mixing, and
+                    blooming with confidence in your own kitchen.</p>
+                <a href="" id="more">More About Me</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="footer">
+        <p>
+            By: Sally Xie | TAC104 @ USC edu
+        </p>
+    </div>
+
+</body>
+
+</html>
